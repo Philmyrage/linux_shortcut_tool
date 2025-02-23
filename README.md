@@ -20,9 +20,8 @@ using the file system validate it exist's and give feedback if it doesn't.
 [Terminal] -te: should this application launch with a console?\
 [Comment] -c: give a comment\
 [Type] -typ: give the type for this shortcut\
-
 # Future plans
 
-==also add a GUI at some point, but I want a deeper understanding of CLI applications and tools.==
+also add a GUI at some point, but I want a deeper understanding of CLI applications and tools.
 
-==Add in the GUI interface a way to manage .desktop files, and open them with a user specific editor, such as vscode or neovim==
+Add in the GUI interface a way to manage .desktop files, and open them with a user specific editor, such as vscode or neovim
