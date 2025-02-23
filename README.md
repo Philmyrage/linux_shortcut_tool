@@ -15,11 +15,12 @@ using the file system validate it exist's and give feedback if it doesn't.
 
 # Commands
 
-[Global] -g: will create the 
-[Image] -img: path to the icon
-[Terminal] -te: should this application launch with a console?
-[Comment] -c: give a comment
-[Type] -typ: give the type for this shortcut
+[Global] -g: will create the .desktop file globally for every account on the machine\
+[Image] -img: path to the icon\
+[Terminal] -te: should this application launch with a console?\
+[Comment] -c: give a comment\
+[Type] -typ: give the type for this shortcut\
+
 # Future plans
 
 ==also add a GUI at some point, but I want a deeper understanding of CLI applications and tools.==
