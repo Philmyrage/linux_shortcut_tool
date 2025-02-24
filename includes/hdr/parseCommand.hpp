@@ -13,7 +13,7 @@ public:
     }
 
     // GETTERS
-    std::map<const std::string, std::string> get_options() { return options; }
+    const std::map<const std::string, std::string> &get_options() { return options; }
 
 protected:
 private:
