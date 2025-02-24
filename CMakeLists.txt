@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.28.3)
-project(linux_shortcut_tool)
+project(linux_shortcut_tool LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
 aux_source_directory(src SRC_FILES)
 add_executable(${PROJECT_NAME} ${SRC_FILES})
-
+target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/includes/hdr")
