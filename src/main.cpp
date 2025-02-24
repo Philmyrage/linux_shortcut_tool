@@ -16,6 +16,11 @@ const bool is_executable(const std::filesystem::path &path)
 	return false;
 }
 
+const void generate_desktop_file(const std::filesystem::path &exec_path)
+{
+	
+}
+
 int main(int argc, char *argv[])
 {
 
