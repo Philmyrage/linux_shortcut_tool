@@ -1,9 +1,12 @@
 #pragma once
 
+#include <map>
+#include <string>
+
 class Shortcut
 {
 public:
-    Shortcut();
+    Shortcut(const std::map<const std::string, std::string> &options);
 
 protected:
 private:
