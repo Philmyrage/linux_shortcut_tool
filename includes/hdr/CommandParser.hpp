@@ -4,10 +4,10 @@
 #include <string>
 #include <filesystem>
 
-class parseCommand
+class CommandParser
 {
 public:
-    parseCommand(const int &argc, char *argv[])
+    CommandParser(const int &argc, char *argv[])
     {
         parse_command(argv, argc);
     }

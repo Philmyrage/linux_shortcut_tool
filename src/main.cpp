@@ -1,24 +1,6 @@
 #include <iostream>
-#include <filesystem>
-#include <fstream>
-#include <string>
-#include <map>
 
-#include "parseCommand.hpp"
-
-const std::filesystem::path LOCAL_SHORTCUT_PATH = "$HOME/.local/share/applications";
-const std::filesystem::path GLOBAL_SHORTCUT_PATH = "/usr/share/applications";
-
-// Used for development purposes only!
-const std::filesystem::path TEST_PATH = "/mnt/Data/";
-
-// creates the .desktop file with the parsed data...
-const void generate_desktop_file()
-{
-	// check if their is already a .desktop file with the same name
-	// name generated from the name argument + .desktop
-	std::ofstream out_file;
-}
+#include "CommandParser.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -26,7 +8,7 @@ int main(int argc, char *argv[])
 	// prompt the user for the information one at a time to get the data for the file.
 	// or when add the gui launch the gui app.
 
-	parseCommand parser = parseCommand(argc, argv);
+	CommandParser parser = CommandParser(argc, argv);
 
 	const auto &options = parser.get_options();
 

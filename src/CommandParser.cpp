@@ -1,7 +1,7 @@
 #include <iostream>
-#include "parseCommand.hpp"
+#include "CommandParser.hpp"
 
-const bool parseCommand::is_executable(const std::filesystem::path &path)
+const bool CommandParser::is_executable(const std::filesystem::path &path)
 {
     if (std::filesystem::exists(path) && std::filesystem::is_regular_file(path))
     {
@@ -14,7 +14,7 @@ const bool parseCommand::is_executable(const std::filesystem::path &path)
 }
 
 // parses the command and caches the data in the appropriate locations
-void parseCommand::parse_command(char *argv[], const int &argc)
+void CommandParser::parse_command(char *argv[], const int &argc)
 {
     // Need to parse the command and options validate it and cache it to be written to .desktop file.
     for (int i = 0; i < argc - 1; i++)
