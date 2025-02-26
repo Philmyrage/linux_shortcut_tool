@@ -1,4 +1,5 @@
 #include <filesystem>
+#include <iostream>
 
 #include "Shortcut.hpp"
 
@@ -10,7 +11,11 @@ const std::filesystem::path TEST_PATH = "/mnt/Data/";
 
 const void Shortcut::generate_shortcut()
 {
-    //check if a shortcut exits
-    //update existing shortcut
-    //create shortcut otherwise
+    for (auto &o : m_options)
+    {
+        std::cout << o.second << std::endl;
+    }
+    // check if a shortcut exits
+    // update existing shortcut
+    // create shortcut otherwise
 }

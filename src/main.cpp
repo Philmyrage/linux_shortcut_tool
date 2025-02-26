@@ -12,14 +12,9 @@ int main(int argc, char *argv[])
 	{
 		std::cout << "No arguments provided" << std::endl;
 	}
+
 	CommandParser parser = CommandParser(argc, argv);
-
-	const auto &options = parser.get_options();
-
-	for (auto &o : options)
-	{
-		std::cout << o.second << std::endl;
-	}
+	Shortcut shortcut = Shortcut(parser.get_options());
 
 	return 0;
 }
