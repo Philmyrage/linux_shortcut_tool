@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 #include "CommandParser.hpp"
 #include "Shortcut.hpp"
 

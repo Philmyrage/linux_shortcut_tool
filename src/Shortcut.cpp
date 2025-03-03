@@ -3,7 +3,16 @@
 #include <fstream>
 
 #include "Shortcut.hpp"
+/*
+Use an array of tuples that will store the command, the arguments, and the section of the .desktop file associated
+EX. (-te, Terminal, false)
+Should be able to access array like // std::get<0>(data[0]) which should return "-te"
+This will allow me to add the ability for the user to only edit and update certain sections easier.
+It will also make generating the shortcut easier because for each tuple i can pull the section and the value
+instead of having a massive of branch of if statements.
 
+
+*/
 const std::filesystem::path LOCAL_SHORTCUT_PATH = "$HOME/.local/share/applications";
 const std::filesystem::path GLOBAL_SHORTCUT_PATH = "/usr/share/applications";
 
